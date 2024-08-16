@@ -24,8 +24,9 @@ spec:
 ---
 apiVersion: image.toolkit.fluxcd.io/v1beta2
 kind: ImageUpdateAutomation
-name: gitops-application
-namespace: flux
+metadata: 
+  name: gitops-application
+  namespace: flux
 spec:
   git: 
     checkout: 
