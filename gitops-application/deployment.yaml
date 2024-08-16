@@ -21,5 +21,5 @@ spec:
             arimlregistry.azurecr.io/arindam-app:1.0
           ports:
             - name: http
-              containerPort: 80
+              containerPort: 8080
               protocol: TCP
