@@ -18,7 +18,7 @@ spec:
       containers:
         - name: gitops-application
           image: >-
-            arimlregistry.azurecr.io/arindam-app:1.0
+            arimlregistry.azurecr.io/arindam-app:2.0
           ports:
             - name: http
               containerPort: 8080
