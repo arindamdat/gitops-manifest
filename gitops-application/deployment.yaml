@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gitops-application
+  namespace: arindam
+  labels:
+    app: gitops-application
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: gitops-application
+  template:
+    metadata:
+      labels:
+        app: gitops-application
+    spec:
+      containers:
+        - name: gitops-application
+          image: >-
+            arimlregistry.azurecr.io/arindam-app:1.0
+          ports:
+            - name: http
+              containerPort: 80
+              protocol: TCP
