@@ -17,8 +17,7 @@ spec:
     spec:
       containers:
         - name: gitops-application
-          image: >-
-            arimlregistry.azurecr.io/arindam-app:3.0.0 # {"$imagepolicy": "flux:gitops-application"}
+          image: arimlregistry.azurecr.io/arindam-app:2.0 # {"$imagepolicy": "flux:gitops-application"}
           ports:
             - name: http
               containerPort: 8080
