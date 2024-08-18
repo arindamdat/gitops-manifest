@@ -22,3 +22,13 @@ spec:
             - name: http
               containerPort: 8080
               protocol: TCP
+          resources: 
+            limits:
+              cpu: 700m
+              memory: 1Gi
+            request: 
+              cpu: 500m
+              memory: 500mi
+          env: 
+            - name: ENV_VAR_1
+              value: "Value defined in repository"
