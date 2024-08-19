@@ -43,7 +43,9 @@ spec:
        - op: add
          path: /spec/template/spec/containers/0/env
          value: 
-              name: NEW_VAR
+            - name: NEW_VAR
               value: some new value
+            - name: ENV_VAR_1
+              value: "Value defined in Kustomization"
      target: 
        labelSelector: "role=application"
