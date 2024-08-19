@@ -50,7 +50,7 @@ spec:
          value: 
            name: ANOTHER_VAR
            value: another variable value from kustomization
-   - patch: |
+           
        - op: add
          path: /spec/template/spec/containers/0/resources
          value: 
