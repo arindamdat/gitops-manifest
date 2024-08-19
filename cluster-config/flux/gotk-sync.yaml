@@ -52,9 +52,9 @@ spec:
            value: another variable value from kustomization
 
        - op: add
-         path: /spec/template/spec/containers/0/resources/limits
+         path: /spec/template/spec/containers/0/resources/limits/cpu
          value: 
-             cpu: 697m
-             memory: 998Mi
+             697m
+             
      target: 
        labelSelector: "role=application"
