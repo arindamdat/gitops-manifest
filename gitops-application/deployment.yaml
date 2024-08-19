@@ -5,6 +5,7 @@ metadata:
   namespace: arindam
   labels:
     app: gitops-application
+    role: application
 spec:
   replicas: 2
   selector:
