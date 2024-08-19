@@ -32,4 +32,4 @@ spec:
               memory: 500mi
           env: 
             - name: ENV_VAR_1
-              value: "Value defined in repository"
+              value: "Value defined in deployment object"

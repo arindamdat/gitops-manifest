@@ -41,11 +41,9 @@ spec:
   patches: 
    - patch: | 
        - op: add
-         path: /spec/template/spec/containers/0/env
+         path: /spec/template/spec/containers/0/env/-
          value: 
-            - name: NEW_VAR
-              value: some new value
-            - name: ENV_VAR_1
-              value: "Value defined in Kustomization"
+            name: NEW_VAR
+            value: some new value from kustomization
      target: 
        labelSelector: "role=application"
