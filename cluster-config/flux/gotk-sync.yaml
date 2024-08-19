@@ -52,10 +52,15 @@ spec:
            value: another variable value from kustomization
 
        - op: replace
-         path: /spec/template/spec/containers/0/resources/limits
+         path: /spec/template/spec/containers/0/resources/limits/cpu
          value: 
-             cpu: 697m
-             memory: 997Mi
+             696m
+
+       - op: replace
+         path: /spec/template/spec/containers/0/resources/limits/memory
+         value: 
+             996Mi
+             
              
      target: 
        labelSelector: "role=application"
