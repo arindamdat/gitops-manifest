@@ -7,6 +7,8 @@ resources:
 ---
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
+resources:
+  - ../gitops-application/deployment.yaml
 patches:
   - path: patch.yaml
     target:
