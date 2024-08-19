@@ -50,12 +50,12 @@ spec:
          value: 
            name: ANOTHER_VAR
            value: another variable value from kustomization
-           
+
        - op: add
          path: /spec/template/spec/containers/0/resources
          value: 
            limits:
              cpu: 698m
-             memory: 999mi
+             memory: 999Mi
      target: 
        labelSelector: "role=application"
